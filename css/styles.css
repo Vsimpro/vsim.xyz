@@ -1,3 +1,14 @@
+* {box-sizing: border-box;}
+
+@media only screen and (max-width: 736px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+}
+
 @font-face {
     font-family: 'pxplus_ibm_vga8regular';
     src: url('/css/PxPlus_IBM_VGA8.ttf') format('truetype');
@@ -12,6 +23,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
 
 html {
     box-sizing: border-box;
@@ -32,7 +45,7 @@ div {
 
 #head {
     padding-top: 8%;
-    text-shadow: 3px 3px rgb(105, 105, 105);
+    text-shadow: 1px 2px rgb(105, 105, 105);
 
 }
 
