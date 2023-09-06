@@ -8,25 +8,156 @@
     <title> vsim.xyz </title>
 </head>
     <body>
-        <div class="container">
-            <div class="row">
-              <div class="col-sm-4">
-                <a href="https://vsim.xyz/aboutme.html"> <img src="/img/proffa.png" style=" box-shadow: 5px 5px #4f6367" width="144" class="center">    </a>
+        <div class="everything">
+            <div class="card">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm-4">
+                        <a href="https://vsim.xyz/aboutme.html"> <img src="/img/proffa.png" style=" box-shadow: 5px 5px #4f6367" width="144" class="center">    </a>
+                        </div>
+                        <div class="col-sm-8">  
+                        <h1 id="head">
+                        <span style="color: red">[<span style="color: rgb(255, 208, 0)">homepage</span><span style="color: rgb(0, 196, 0)">@</span><span style="color: rgb(0, 183, 255)">vsim.xyz</span><span style="color: red">]</span></span></span><span style="color: rgb(140, 0, 255)"> ~ </span> </h1>     
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-8">  
-                <h1 id="head">
-                <span style="color: red">[<span style="color: rgb(255, 208, 0)">homepage</span><span style="color: rgb(0, 196, 0)">@</span><span style="color: rgb(0, 183, 255)">vsim.xyz</span><span style="color: red">]</span></span></span><span style="color: rgb(140, 0, 255)"> ~ </span> </h1>     
+                <div style="font-size:16px; text-align:center; font-family:courier,monospace;">
+                    <a href="https://github.com/Vsimpro" target="_blank" rel="noopener noreferrer">github</a> |
+                    <a href="https://www.youtube.com/channel/UCF3bUfXv9uvXGxOmeZJCC9A" target="_blank" rel="noopener noreferrer">youtube</a> |
+                    <a href="https://blog.vsim.xyz/" target="_blank" rel="noopener noreferrer">blog</a> |
+                    <a href="https://vsim.xyz/aboutme.html">about me</a> 
                 </div>
             </div>
-        </div>
-        <div style="font-size:16px; text-align:center; font-family:courier,monospace;">
-            <a href="https://github.com/Vsimpro" target="_blank" rel="noopener noreferrer">github</a> |
-            <a href="https://www.youtube.com/channel/UCF3bUfXv9uvXGxOmeZJCC9A" target="_blank" rel="noopener noreferrer">youtube</a> |
-            <a href="https://blog.vsim.xyz/" target="_blank" rel="noopener noreferrer">blog</a> |
-            <a href="https://todo.vsim.xyz/" target="_blank" rel="noopener noreferrer">todo-app</a> |
-            <a href="https://vsim.xyz/aboutme.html">about me</a> 
+
+                <div class="card">
+                    <h3> Welcome! </h3>
+                    <p> Welcome to my home page. Here you can find quick links to my stuff. The menü you can find on the top card. </p>
+                </div>
+
+                <div class="card primary">
+                    <h4 class="card_title"> Weblog </h4>
+                    <ul style="font-size:16px; font-family:courier,monospace;">    
+                        <p> I write a blog! Or atleast, I try to write, <br> whenever I do interesting stuff. <br> Here's some of my tomfoolery I have been up to: </p>
+                        <li>
+                            <a href="https://blog.vsim.xyz/article/bot-chelors-degree.html"> bot for a game no-one knows. </a>
+                        </li>
+
+                        <li>
+                            <a href="https://blog.vsim.xyz/article/jwtf.html"> exploring JWTokens </a>
+                        </li>
+
+                        <li>
+                            <a href="https://blog.vsim.xyz/article/markdown-mayhem.html"> discord markdown bugs </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2> Status </h2>
+                    <p> - no data - (coming soon.)</p>
+                </div>
+                <br>
+            </div>
         </div>
     </body>
 </html>
+
+<style>
+
+* {
+    user-select: none;
+}    
+
+ul {
+    padding: 0;
+    margin-left: 1%;
+    list-style-type: none;
+}
+
+li::before {
+  content: "-";
+}
+
+p {
+    color: white;
+    font-size: medium;
+    font-size:16px; font-family:courier,monospace;
+}
+
+.card {
+    margin: 0;
+    padding: 0;
+
+    margin-top:   3%;
+    margin-left:  5%;
+    margin-right: 5%;
+
+    padding-top:    1%;
+    padding-bottom: 2%;
+    padding-left:   1%;
+
+    border: 1px solid #333333;
+    border-radius: 4px;
+
+    box-shadow: 4px 4px 4px #232323;
+
+    background-color: #222222;
+}
+
+.primary  {
+    align-items: left;
+    padding-left: -5%;
+}
+
+.secondary {
+    width: 43%; 
+    float: right;
+}
+
+
+.card_title {
+    text-align: center;
+}
+
+.everything {
+    width: 60%;
+    margin: 0;
+    margin-left: 20%;
+}
+
+@media all and (orientation:portrait) and (max-width: 600px) {
+    .card {
+        margin-top:   4%;
+        margin-left:  5%;
+        margin-right: 5%;
+    }
+
+    
+    .secondary, .primary  {
+        width: 90%;
+        margin-bottom:  -2%;
+    }
+
+    .primary {
+        padding-left: -10%;
+    }
+
+    #head  {
+        margin: 0;
+        margin-left:  10%;
+        font-size: x-large;
+    }
+
+    .everything {
+        width: 100%;
+        margin: 0;
+        margin-left: 0%;
+        margin-top: -2%;
+    }
+
+}
+
+</style>
 
 
