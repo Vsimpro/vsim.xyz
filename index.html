@@ -8,38 +8,40 @@
     <title> vsim.xyz </title>
 </head>
     <body>
-        <div class="everything">
-            <div class="card">
+        <div class="everything row">
+            <div class="card col-sm-12">
                 <div class="container">
                     <div class="row">
-                    <div class="col-sm-4">
-                        <a href="https://vsim.xyz/aboutme.html"> <img src="/img/proffa.png" style=" box-shadow: 5px 5px #4f6367" width="144" class="center">    </a>
+                        <div class="col-sm-4">
+                            <a href="https://vsim.xyz/aboutme.html"> <img src="/img/proffa.png" style=" box-shadow: 5px 5px #4f6367" width="144" class="center">    </a>
                         </div>
-                        <div class="col-sm-8">  
-                        <h1 id="head">
-                        <span style="color: red">[<span style="color: rgb(255, 208, 0)">homepage</span><span style="color: rgb(0, 196, 0)">@</span><span style="color: rgb(0, 183, 255)">vsim.xyz</span><span style="color: red">]</span></span></span><span style="color: rgb(140, 0, 255)"> ~ </span> </h1>     
+                        <div class="col-sm-8  text-align:left; ">  
+                            <h1 id="head">
+                            <span style="color: red">[<span style="color: rgb(255, 208, 0)">homepage</span><span style="color: rgb(0, 196, 0)">@</span><span style="color: rgb(0, 183, 255)">vsim.xyz</span><span style="color: red">]</span></span></span><span style="color: rgb(140, 0, 255)"> ~ </span> </h1>     
+                            <br>
+                            <div class="top_nav">
+                                <a href="https://github.com/Vsimpro" target="_blank" rel="noopener noreferrer">github</a> |
+                                <a href="https://www.youtube.com/channel/UCF3bUfXv9uvXGxOmeZJCC9A" target="_blank" rel="noopener noreferrer">youtube</a> |
+                                <a href="https://blog.vsim.xyz/" target="_blank" rel="noopener noreferrer">blog</a> |
+                                <a href="https://vsim.xyz/aboutme.html">about me</a> 
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div style="font-size:16px; text-align:center; font-family:courier,monospace;">
-                    <a href="https://github.com/Vsimpro" target="_blank" rel="noopener noreferrer">github</a> |
-                    <a href="https://www.youtube.com/channel/UCF3bUfXv9uvXGxOmeZJCC9A" target="_blank" rel="noopener noreferrer">youtube</a> |
-                    <a href="https://blog.vsim.xyz/" target="_blank" rel="noopener noreferrer">blog</a> |
-                    <a href="https://vsim.xyz/aboutme.html">about me</a> 
-                </div>
             </div>
 
-                <div class="card">
-                    <h3> Welcome! </h3>
-                    <p> Welcome to my home page. Here you can find quick links to my stuff. The menü you can find on the top card. </p>
-                </div>
 
-                <div class="card primary">
-                    <h4 class="card_title"> Weblog </h4>
-                    <ul style="font-size:16px; font-family:courier,monospace;">    
-                        <p> I write a blog! Or atleast, I try to write, <br> whenever I do interesting stuff. <br> Here's some of my tomfoolery I have been up to: </p>
-                        <li>
-                            <a href="https://blog.vsim.xyz/article/bot-chelors-degree.html"> bot for a game no-one knows. </a>
+            <div class="card col-sm-12">
+                <h3 class="blink_y"> Welcome! </h3>
+                <p> Welcome to my home page, my very own web-sandbox, with no rules! <br> From the top you can find quick links to my stuff. The menü you can find on the top card. </p>
+            </div>
+
+            <div class="card primary col-sm-12">
+                <h4 class="card_title blink_g"> Weblog </h4>
+                <ul style="font-size:16px; font-family:courier,monospace;">    
+                    <p> I write a blog! Or atleast I try to write whenever I do interesting stuff. Here's some of my tomfoolery I have been up to: </p>
+                    <li>
+                        <a href="https://blog.vsim.xyz/article/bot-chelors-degree.html"> bot for a game no-one knows. </a>
                         </li>
 
                         <li>
@@ -49,16 +51,16 @@
                         <li>
                             <a href="https://blog.vsim.xyz/article/markdown-mayhem.html"> discord markdown bugs </a>
                         </li>
-
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h2> Status </h2>
-                    <p> - no data - (coming soon.)</p>
-                </div>
-                <br>
+                </ul>
             </div>
+
+            <div class="card third col-sm-12">
+                <h2 class="blink_b"> Status </h2>
+                <p> - no data - (coming soon.)</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p> (c) 2023 Ville Similä. All Rights Reserved <p>
         </div>
     </body>
 </html>
@@ -85,6 +87,21 @@ p {
     font-size:16px; font-family:courier,monospace;
 }
 
+
+.top_nav {
+    font-size: 15px; 
+    margin-left: 4%; 
+    margin-bottom: 10%;
+    font-family:courier,monospace;
+}
+
+
+.footer {
+    bottom: 0;
+    text-align: center;
+    align-items: center;
+}
+
 .card {
     margin: 0;
     padding: 0;
@@ -107,17 +124,17 @@ p {
 
 .primary  {
     align-items: left;
-    padding-left: -5%;
+    margin-right:  0%;
+    xmargin-left:   0%;
 }
 
-.secondary {
-    width: 43%; 
-    float: right;
+.third {
+    xmargin-right:  0%;
+    xmargin-left:   0%;
 }
-
 
 .card_title {
-    text-align: center;
+    xtext-align: center;
 }
 
 .everything {
@@ -126,7 +143,289 @@ p {
     margin-left: 20%;
 }
 
+/* Yellow Blinking effect */
+
+.blink_b {
+    color: rgb(0, 183, 255);
+    font-size: xx-large;
+    text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    animation: blinker_blue 12s step-start infinite;
+}
+
+
+
+@keyframes blinker_blue {
+    5% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    }
+
+    10% {
+        opacity: 25%;
+        text-shadow: 0px 0px 2px rgb(67, 202, 255);
+    }
+
+    25% {
+        opacity: 25%;
+        text-shadow: 0px 0px 2px rgb(67, 202, 255);
+    }
+
+    27% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    }
+
+    29% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8x rgb(67, 202, 255);
+    }
+
+    32% {
+        opacity: 90%;
+        text-shadow: 0px 0px 7x rgb(67, 202, 255);
+    }
+
+    35% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8x rgb(67, 202, 255);
+    }
+
+    40% {
+        opacity: 80%;
+        text-shadow: 0px 0px 8x rgb(67, 202, 255);
+    }
+
+    45% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8x rgb(67, 202, 255);
+    }
+
+    60% {
+        opacity: 25%;
+        text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    }
+
+    65% {
+        opacity: 80%;
+        text-shadow: 0px 0px 5px rgb(67, 202, 255);
+    }
+
+    70% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8px rgb(67, 202, 255);
+    }
+
+    72% {
+        opacity: 90%;
+        text-shadow: 0px 0px 7px rgb(67, 202, 255);
+    }
+
+    78% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8px rgb(67, 202, 255);
+    }
+
+    82% {
+        opacity: 80%;
+        text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    }
+
+    86% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8px rgb(67, 202, 255);
+    }
+
+    92% {
+        opacity: 90%;
+        text-shadow: 0px 0px 6cqw rgb(67, 202, 255);
+    }
+
+    96% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8px rgb(67, 202, 255);
+    }
+
+    98% {
+        opacity: 75%;
+        text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    }
+
+    100% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    }
+
+}
+
+/* Yellow Blinking effect */
+
+.blink_y {
+    color: rgb(255, 208, 0);
+    font-size: xx-large;
+    text-shadow: 0px 0px 4px rgb(238, 224, 160);
+    animation: blinker_yellow 1.25s step-start infinite;
+}
+
+@keyframes blinker_yellow {
+    10% {
+        opacity: 100%;
+    }
+    
+    20% {
+        opacity: 100%;
+        text-shadow: -0px 0px 4px rgb(238, 224, 160);
+    }
+
+    25% {
+        text-shadow: 0px 0px 3px rgb(238, 224, 160);
+    }
+
+    30% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(238, 224, 160);
+    }
+
+    35% {
+        opacity: 25%;
+        text-shadow: 0px 0px 0px rgb(238, 224, 160);
+    }
+
+    40% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(238, 224, 160);
+    }
+
+    50% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(238, 224, 160);
+    }
+
+    60% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(238, 224, 160);
+    }
+
+    70% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(238, 224, 160);
+    }
+
+    72% {
+        opacity: 25%;
+        text-shadow: 0px 0px 1px rgb(238, 224, 160);
+    }
+
+    75% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(238, 224, 160);
+    }
+
+    80% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(238, 224, 160);
+    }
+
+    90% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(238, 224, 160);
+    }
+
+    100% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    }
+
+}
+
+
+/* Green Blinking effect */
+
+.blink_g {
+    color: rgb(126, 226, 126);
+    font-size: xx-large;
+    text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    animation: blinker_green 1.5s step-start infinite;
+}
+
+@keyframes blinker_green {
+    10% {
+        opacity: 100%;
+    }
+    
+    20% {
+        opacity: 100%;
+        text-shadow: -0px 0px 4px rgb(193, 238, 203);
+    }
+
+    25% {
+        text-shadow: 0px 0px 3px rgb(193, 238, 203);
+    }
+
+    30% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(193, 238, 203);
+    }
+
+    35% {
+        opacity: 0%;
+        text-shadow: 0px 0px 0px rgb(193, 238, 203);
+    }
+
+    40% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(193, 238, 203);
+    }
+
+    50% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    }
+
+    60% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(193, 238, 203);
+    }
+
+    70% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    }
+
+    72% {
+        opacity: 25%;
+        text-shadow: 0px 0px 1px rgb(193, 238, 203);
+    }
+
+    75% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(193, 238, 203);
+    }
+
+    80% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    }
+
+    90% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(193, 238, 203);
+    }
+
+    100% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    }
+
+}
+
+
 @media all and (orientation:portrait) and (max-width: 600px) {
+    
+    .footer {
+        bottom: 0;
+        position: relative;
+    }
+    
     .card {
         margin-top:   4%;
         margin-left:  5%;
@@ -161,3 +460,9 @@ p {
 </style>
 
 
+<script>
+
+
+
+
+</script>
