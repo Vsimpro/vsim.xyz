@@ -46,6 +46,8 @@ body {
     border: 1px solid #333333;
     box-shadow: 4px 4px 4px #232323;
     border-radius: 6px;
+
+    background-color: #202020;
 }
 
 .container {
