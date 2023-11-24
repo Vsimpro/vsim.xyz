@@ -1,0 +1,275 @@
+
+/* Yellow Blinking effect */
+
+.blink_b {
+    color: rgb(0, 183, 255);
+    font-size: xx-large;
+    text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    animation: blinker_blue 12s step-start infinite;
+}
+
+
+
+@keyframes blinker_blue {
+    5% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    }
+
+    10% {
+        opacity: 25%;
+        text-shadow: 0px 0px 2px rgb(67, 202, 255);
+    }
+
+    25% {
+        opacity: 25%;
+        text-shadow: 0px 0px 2px rgb(67, 202, 255);
+    }
+
+    27% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    }
+
+    29% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8x rgb(67, 202, 255);
+    }
+
+    32% {
+        opacity: 90%;
+        text-shadow: 0px 0px 7x rgb(67, 202, 255);
+    }
+
+    35% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8x rgb(67, 202, 255);
+    }
+
+    40% {
+        opacity: 80%;
+        text-shadow: 0px 0px 8x rgb(67, 202, 255);
+    }
+
+    45% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8x rgb(67, 202, 255);
+    }
+
+    60% {
+        opacity: 25%;
+        text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    }
+
+    65% {
+        opacity: 80%;
+        text-shadow: 0px 0px 5px rgb(67, 202, 255);
+    }
+
+    70% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8px rgb(67, 202, 255);
+    }
+
+    72% {
+        opacity: 90%;
+        text-shadow: 0px 0px 7px rgb(67, 202, 255);
+    }
+
+    78% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8px rgb(67, 202, 255);
+    }
+
+    82% {
+        opacity: 80%;
+        text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    }
+
+    86% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8px rgb(67, 202, 255);
+    }
+
+    92% {
+        opacity: 90%;
+        text-shadow: 0px 0px 6cqw rgb(67, 202, 255);
+    }
+
+    96% {
+        opacity: 100%;
+        text-shadow: 0px 0px 8px rgb(67, 202, 255);
+    }
+
+    98% {
+        opacity: 75%;
+        text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    }
+
+    100% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(67, 202, 255);
+    }
+
+}
+
+/* Yellow Blinking effect */
+
+.blink_y {
+    color: rgb(255, 208, 0);
+    font-size: xx-large;
+    text-shadow: 0px 0px 4px rgb(238, 224, 160);
+    animation: blinker_yellow 1.25s step-start infinite;
+}
+
+@keyframes blinker_yellow {
+    10% {
+        opacity: 100%;
+    }
+    
+    20% {
+        opacity: 100%;
+        text-shadow: -0px 0px 4px rgb(238, 224, 160);
+    }
+
+    25% {
+        text-shadow: 0px 0px 3px rgb(238, 224, 160);
+    }
+
+    30% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(238, 224, 160);
+    }
+
+    35% {
+        opacity: 25%;
+        text-shadow: 0px 0px 0px rgb(238, 224, 160);
+    }
+
+    40% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(238, 224, 160);
+    }
+
+    50% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(238, 224, 160);
+    }
+
+    60% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(238, 224, 160);
+    }
+
+    70% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(238, 224, 160);
+    }
+
+    72% {
+        opacity: 25%;
+        text-shadow: 0px 0px 1px rgb(238, 224, 160);
+    }
+
+    75% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(238, 224, 160);
+    }
+
+    80% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(238, 224, 160);
+    }
+
+    90% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(238, 224, 160);
+    }
+
+    100% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    }
+
+}
+
+
+/* Green Blinking effect */
+
+.blink_g {
+    color: rgb(126, 226, 126);
+    font-size: xx-large;
+    text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    animation: blinker_green 1.5s step-start infinite;
+}
+
+@keyframes blinker_green {
+    10% {
+        opacity: 100%;
+    }
+    
+    20% {
+        opacity: 100%;
+        text-shadow: -0px 0px 4px rgb(193, 238, 203);
+    }
+
+    25% {
+        text-shadow: 0px 0px 3px rgb(193, 238, 203);
+    }
+
+    30% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(193, 238, 203);
+    }
+
+    35% {
+        opacity: 0%;
+        text-shadow: 0px 0px 0px rgb(193, 238, 203);
+    }
+
+    40% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(193, 238, 203);
+    }
+
+    50% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    }
+
+    60% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(193, 238, 203);
+    }
+
+    70% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    }
+
+    72% {
+        opacity: 25%;
+        text-shadow: 0px 0px 1px rgb(193, 238, 203);
+    }
+
+    75% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(193, 238, 203);
+    }
+
+    80% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    }
+
+    90% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(193, 238, 203);
+    }
+
+    100% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    }
+
+}
