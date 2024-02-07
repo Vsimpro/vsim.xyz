@@ -232,3 +232,33 @@ h2, h3, h4 {
 
  }
 
+
+@media all and (orientation:portrait) and (min-width: 600px) and (max-width: 720px) { 
+    .everything {
+        width: 650px;
+    }
+
+    #head {
+        font-size: 28px;
+    }
+
+    .top_nav {
+        font-size: 14px;
+    }
+}
+
+@media all and (orientation:portrait) and (max-width: 720px) {
+    body {
+        background-color: #181818;
+    }
+
+    img {
+        margin-top: 4%;
+    }
+
+    .card {
+
+        padding-top: 2%;
+    }
+    
+}
