@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="css/animations.css">
     <title> vsim.xyz </title>
 </head>
-    <body>
+    <body class="crt">
         <div class="everything">
             <div class="card">
                 <div class="container">    
                     <div class="c_item">
-                        <a class="image_link" href="https://vsim.xyz/aboutme.html"> <img src="/img/proffa.png" style=" box-shadow: 5px 5px #4f6367" width="144" class="center">    </a>
+                        <a class="image_link" href="https://vsim.xyz/aboutme.html"> <img src="/img/proffa.png" style=" box-shadow: 7px 7px #4f6367" width="144" class="center">    </a>
                     </div>
                     <div class="c_item">
                         <h1 id="head">
@@ -31,8 +31,6 @@
                 </div>
             </div>
        
-
-
             <div class="card one">
                 <h3 class="blink_y"> Welcome! </h3>
                 <p  class="blog_links"> Welcome to my home page. From the top you can find quick links to my stuff, like Twitter, Blog and GitHub.
@@ -73,13 +71,83 @@
                 </ul>
             </div>
 
-            <div class="card three">
-                <h2 class="blink_b"> Status </h2>
-                <p> - no data - (coming soon?)</p>
+            <div class="side_by_side">
+                <div class="card three">
+                    <h2 class="blink_b"> spotify </h2>
+                    <div id="song_data"><br>offline</div>
+                </div>
+
+                <div class="card four">
+                    <h2 class="blink_r"> where-abouts </h2>
+                    <p> - no data - (coming soon?)</p>
+                </div>
             </div>
-            <div class="footer" style="text-align: center;">
-                <p> (c) 2023 Ville Similä. All Rights Reserved <p>
+            <div class="card footer" style="text-align: center;">
+                <p> (c) 2023 Ville Similä. All Rights Reserved </p>
             </div>
         </div>
     </body>
 </html>
+<script>
+
+var data_url = "http://lastfm.vsim.xyz/api/v1/last_song"
+var song_data = document.getElementById( "song_data" )
+
+function refresh() {
+    fetch( data_url )
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        // This is horrible spaghetti.
+        let artist = data[ "artist" ]
+        let image  = data[ "image" ]
+        let title  = data[ "title" ]
+
+        if (artist.length > 32) {
+            let split = artist.split(" ");
+            if (split.length > 1) {
+                artist = split[ 0 ] + "..."
+            } else {
+                artist = artist.slice(0, 10) + "..."
+            }
+        }
+
+        let _name = document.createElement( "p" )
+            _name.innerHTML = `<span style="color: grey">'</span>${ title } <span style="color: grey">',<br> by </span>${ artist }`
+            _name.style.float = "left"
+            _name.style.userSelect = "text"
+            _name.style.fontSize = "18px"
+
+        let div = document.createElement( "div" )
+        console.log( title.length + " " + artist.length )
+        if ((title.length < 30) && (artist.length < 30)) {
+            let _image = document.createElement( "img" )
+            _image.src = image
+            _image.style.float = "left"
+            _image.className = "small_icon_spotify"
+            _image.style.marginTop = "8px"
+            _image.style.marginRight = "6%"   
+            _image.style.boxShadow = "3px 2px 1px #444444"        
+
+            div.appendChild( _image )
+        }
+
+        div.appendChild( _name )
+                                  
+        song_data.innerText = ""
+        song_data.appendChild( div )
+        
+    })
+    .catch(error => {
+        console.log('Error fetching data:', error);
+    });
+
+    setTimeout(refresh, 30000);
+}
+
+refresh()
+</script>

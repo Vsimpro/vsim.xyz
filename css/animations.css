@@ -6,6 +6,7 @@
     font-size: xx-large;
     text-shadow: 0px 0px 6px rgb(67, 202, 255);
     animation: blinker_blue 12s step-start infinite;
+    margin-bottom: 0;
 }
 
 
@@ -270,6 +271,87 @@
     100% {
         opacity: 100%;
         text-shadow: 0px 0px 4px rgb(193, 238, 203);
+    }
+
+}
+
+
+/* Green Blinking effect */
+
+.blink_r {
+    color: rgb(255, 55, 40);
+    font-size: xx-large;
+    text-shadow: 0px 0px 4px rgb(255, 111, 100);
+    animation: blinker_red 1.4s step-start infinite;
+}
+
+@keyframes blinker_red {
+    10% {
+        opacity: 100%;
+    }
+    
+    20% {
+        opacity: 100%;
+        text-shadow: -0px 0px 4px rgb(255, 111, 100);
+    }
+
+    25% {
+        text-shadow: 0px 0px 3px rgb(255, 111, 100);
+    }
+
+    30% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(255, 111, 100);
+    }
+
+    35% {
+        opacity: 0%;
+        text-shadow: 0px 0px 0px rgb(255, 111, 100);
+    }
+
+    40% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(255, 111, 100);
+    }
+
+    50% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(255, 111, 100);
+    }
+
+    60% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(255, 111, 100);
+    }
+
+    70% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(255, 111, 100);
+    }
+
+    72% {
+        opacity: 25%;
+        text-shadow: 0px 0px 1px rgb(255, 111, 100);
+    }
+
+    75% {
+        opacity: 50%;
+        text-shadow: 0px 0px 2px rgb(255, 111, 100);
+    }
+
+    80% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(255, 111, 100);
+    }
+
+    90% {
+        opacity: 100%;
+        text-shadow: 0px 0px 6px rgb(255, 111, 100);
+    }
+
+    100% {
+        opacity: 100%;
+        text-shadow: 0px 0px 4px rgb(255, 111, 100);
     }
 
 }
