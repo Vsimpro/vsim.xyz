@@ -1,5 +1,5 @@
 
-/* Yellow Blinking effect */
+/* Blue Blinking effect */
 
 .blink_b {
     color: rgb(0, 183, 255);
@@ -276,7 +276,7 @@
 }
 
 
-/* Green Blinking effect */
+/* Red Blinking effect */
 
 .blink_r {
     color: rgb(255, 55, 40);
@@ -352,6 +352,48 @@
     100% {
         opacity: 100%;
         text-shadow: 0px 0px 4px rgb(255, 111, 100);
+    }
+
+}
+
+/* Purple Blinking effect */
+
+.blink_p {
+    color: rgb(192, 84, 255);
+    font-size: xx-large;
+    text-shadow: 0px 0px 6px rgb(165, 65, 223);
+    animation: blinker_purple 0.8s step-start infinite;
+}
+
+@keyframes blinker_purple {
+    10% {
+        opacity: 100%;
+        text-shadow: 0px 0px 12px rgb(165, 65, 223);
+    }
+    
+    20% {
+        opacity: 20%;
+        text-shadow: 0px 0px 2px rgb(165, 65, 223);
+    }
+
+    50% {
+        opacity: 80%;
+        text-shadow: 0px 0px 6px rgb(165, 65, 223);
+    }
+
+    20% {
+        opacity: 40%;
+        text-shadow: 0px 0px 4px rgb(165, 65, 223);
+    }
+
+    90% {
+        opacity: 90%;
+        text-shadow: 0px 0px 8px rgb(165, 65, 223);
+    }
+
+    100% {
+        opacity: 100%;
+        text-shadow: 0px 0px 12px rgb(165, 65, 223);
     }
 
 }

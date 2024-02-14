@@ -25,7 +25,7 @@
                             <a href="https://github.com/Vsimpro" target="_blank" rel="noopener noreferrer">github</a> |
                             <a href="https://twitter.com/Vsimpro" target="_blank" rel="noopener noreferrer">twitter</a> |
                             <a href="https://blog.vsim.xyz/" target="_blank" rel="noopener noreferrer">blog</a> |
-                            <a href="https://vsim.xyz/aboutme.html">about me</a> 
+                            <a href="https://kiosk.vsim.xyz">kiosk</a> 
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
        
             <div class="card one">
                 <h3 class="blink_y"> Welcome! </h3>
-                <p  class="blog_links"> Welcome to my home page. From the top you can find quick links to my stuff, like Twitter, Blog and GitHub.
+                <p  class="blog_links"> Welcome to my home page. From the top you can find links to my stuff, like Twitter, Blog and GitHub.
                 <br><span style="color: rgb(0, 196, 0)">#</span><span style="color: rgb(0, 183, 255)">TODO:</span> Add cool features on the site. </p>
                     <ul class="blog_links">
                         <li>
@@ -82,8 +82,35 @@
                     <p> - no data - (coming soon?)</p>
                 </div>
             </div>
-            <div class="card footer" style="text-align: center;">
-                <p> (c) 2023 Ville Similä. All Rights Reserved </p>
+        
+            <div class="card five">
+                <h3 class="blink_p"> friends!</h3>
+                <ul class="friend_links">    
+                    <p> These guys are tech <strong><i>wizards!</i></strong><br>
+                    <li class="friends">
+                        <a href="https://bushido-sec.com/" target="_blank">2ourc3</a>
+                            <br>
+                    </li class="friends">
+                    <li class="friends">
+                        <a href="https://5pider.net/" target="_blank">5pider</a>
+                        <br>
+                    </li>
+                    <li class="friends">
+                        <a href="https://akirataguchi115.github.io/" target="_blank">akira</a>
+                        <br>
+                    </li>
+                    <li class="friends">
+                        <a href="https://djnn.sh/" target="_blank">djnn</a>
+                    </li>
+                    <li class="friends">
+                        <a href="">bakki</a>  <-- coming soon!
+                        <br>
+                    </li>
+                    <li class="friends">
+                        <a href="https://taquine.zip/" target="_blank">taquine</a>
+                    </li>
+                </ul>
+                <img class="wizard" src="/img/wizard.png">
             </div>
         </div>
     </body>
@@ -117,13 +144,14 @@ function refresh() {
         }
 
         let _name = document.createElement( "p" )
-            _name.innerHTML = `<span style="color: grey">'</span>${ title } <span style="color: grey">',<br> by </span>${ artist }`
+            _name.innerHTML = `<span style="color: grey">'</span>${ title }<span style="color: grey">',<br> by</span> ${ artist }`
             _name.style.float = "left"
             _name.style.userSelect = "text"
             _name.style.fontSize = "18px"
 
         let div = document.createElement( "div" )
         console.log( title.length + " " + artist.length )
+        
         if ((title.length < 30) && (artist.length < 30)) {
             let _image = document.createElement( "img" )
             _image.src = image

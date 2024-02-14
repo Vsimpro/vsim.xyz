@@ -41,21 +41,26 @@ body {
 
 .card {
     margin: 5%;
+    
     padding: 0;
     background-color: #252525;
     border: 1px solid #444444;
     box-shadow: 4px 4px 4px #282828;
     border-radius: 6px;
+
+    float: left;
 }
 
 .container {
     margin: 0;
 
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     padding-right:  50px;
 
     display: grid;
     grid-template-columns: auto auto;
+
+    width: 720px;
 
     overflow: hidden;
 }
@@ -99,7 +104,7 @@ body {
 
     margin: 0;
     
-    margin-left:  35px;
+    margin-left:  41px;
     margin-right: 150px;
     
     width: 333px;
@@ -115,10 +120,33 @@ body {
     margin-top: -15px;
 
     padding: 0;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     
     list-style-type: none;
     
+}
+
+.friend_links {
+    font-size:16px; 
+    font-family:courier,monospace;
+    
+    margin: 0;
+    margin-top: -15px;
+
+    padding: 0;
+    padding-bottom: 25px;
+    
+    list-style-type: none;
+}
+
+.friends {
+    font-size: 16px;
+    margin-left: 2%;
+    margin-bottom: 2px;
+}
+
+.friends::before {
+    content: "⌨";
 }
 
 li::before {
@@ -135,9 +163,9 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-.one, .two, .three, .four {
+.one, .two, .three, .four, .five {
     padding-left:   15px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .three {
@@ -146,6 +174,10 @@ a:hover, a:active {
 
 .four {
     float: left;
+}
+
+.five {
+    width: 720px;
 }
 
 .three, .four {
@@ -160,7 +192,7 @@ a:hover, a:active {
 }
 
 .side_by_side {
-    display: inline;
+    xdisplay: inline;
 }
 
 h2, h3, h4 {
@@ -173,14 +205,20 @@ img {
     margin-top: 6%;
 }
 
-.footer {
-    border: 0;
-    box-shadow: 0 0 0;
-    background: linear-gradient(to bottom,  rgba(10, 10, 10, 0.0), rgba(10, 10, 10, 0.0));
-}
+.card, .one, .two, .three, .four {
+    margin-top:    10px;
+    margin-bottom: 10px;
+} 
 
-.song_data {
-    background-color: red;
+.wizard {
+    margin: 0;
+    padding: 0;
+
+    margin-top: -210px;
+
+    width: 220px;
+
+    float: right;
 }
 
 /* phone */
@@ -195,6 +233,7 @@ img {
     }
 
     .card { 
+        width: 95%;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -221,12 +260,15 @@ img {
         margin-left: 18px;
     }
 
-    .one, .two, .three {
+    .one, .two, .three, .four, .five {
         padding-right: 5px;
     }
 
-    
     .three, .four {
+        width: 360px;
+    }
+
+    .one, .two, .five {
         width: 360px;
     }
     
@@ -234,8 +276,9 @@ img {
         display:contents;
     }
 
-    .small_icon_spotify {
-        background-color: red;
+    .wizard {
+        margin-top: -100px;
+        width: 128px;
     }
 }
 
@@ -282,7 +325,7 @@ img {
  }
 
 
-@media all and (orientation:portrait) and (min-width: 600px) and (max-width: 720px) { 
+@media all and (orientation:portrait) and (min-width: 600px) and (max-width: 720px) {     
     .everything {
         width: 650px;
     }
@@ -297,6 +340,10 @@ img {
 }
 
 @media all and (orientation:portrait) and (max-width: 720px) {
+    .card {
+        max-width: 100%;
+    }
+    
     img {
         margin-top: 4%;
     }
@@ -304,5 +351,17 @@ img {
     .card {
         padding-top: 2%;
     }
-    
+}
+
+
+/* narrow phone */
+@media all and (orientation:portrait) and (max-width: 360px) { 
+    .card, .one, .two, .three, .four, .five {
+        max-width: 320px;
+    }
+
+    .wizard {
+        display: none;
+        xmargin-top: -192px;
+    }
 }
