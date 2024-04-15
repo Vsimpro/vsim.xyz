@@ -79,7 +79,7 @@
 
                 <div class="card four">
                     <h2 class="blink_r"> where-abouts </h2>
-                    <p> - no data - (coming soon?)</p>
+                    <h3 style="font-family: monospace;"> Deep in Cyber </h3>
                 </div>
             </div>
         
@@ -103,7 +103,7 @@
                         <a href="https://djnn.sh/" target="_blank">djnn</a>
                     </li>
                     <li class="friends">
-                        <a href="">bakki</a>  <-- coming soon!
+                        <a href="https://sillywa.re/"  target="_blank">bakki</a> 
                         <br>
                     </li>
                     <li class="friends">
@@ -117,7 +117,9 @@
 </html>
 <script>
 
-var data_url = "http://lastfm.vsim.xyz/api/v1/last_song"
+var PROTOCOL = window.location.href.includes("https") ? "https" : "http";
+
+var data_url = PROTOCOL + "://lastfm.vsim.xyz/api/v1/last_song"
 var song_data = document.getElementById( "song_data" )
 
 function refresh() {
@@ -134,13 +136,17 @@ function refresh() {
         let image  = data[ "image" ]
         let title  = data[ "title" ]
 
-        if (artist.length > 32) {
-            let split = artist.split(" ");
-            if (split.length > 1) {
-                artist = split[ 0 ] + "..."
-            } else {
-                artist = artist.slice(0, 10) + "..."
-            }
+        if ((artist.length > 18) || (title.length > 18)) {
+            let split_a = artist.split(" ");
+            let split_t = title.split(" ");
+            
+            if ((split_t.length > 1) && (title.length < 15)) {
+                title = split_t[ 0 ] + "..."
+            } 
+
+            if ((split_a.length > 1) && (artist.length < 15)) {
+                artist = split_a[ 0 ] + "..."
+            } 
         }
 
         let _name = document.createElement( "p" )
@@ -150,9 +156,8 @@ function refresh() {
             _name.style.fontSize = "18px"
 
         let div = document.createElement( "div" )
-        console.log( title.length + " " + artist.length )
         
-        if ((title.length < 30) && (artist.length < 30)) {
+        if ((title.length < 25) && (artist.length < 25)) {
             let _image = document.createElement( "img" )
             _image.src = image
             _image.style.float = "left"
