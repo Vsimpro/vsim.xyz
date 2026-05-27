@@ -19,6 +19,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'cordata';
+    src: url('/css/cordata.woff2') format('woff2'),
+	url('/css/cordata.woff') format('woff'),
+	url('/css/cordata.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 html {
     overflow-x: hidden;
@@ -40,13 +49,13 @@ body {
 }
 
 .card {
+    
     margin: 5%;
     
-    padding: 0;
-    background-color: #252525;
+    background-color: #282828;
     border: 1px solid #444444;
     box-shadow: 4px 4px 4px #282828;
-    border-radius: 6px;
+    border-radius: 4px;
 
     float: left;
 }
@@ -54,7 +63,7 @@ body {
 .container {
     margin: 0;
 
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     padding-right:  50px;
 
     display: grid;
@@ -69,8 +78,8 @@ body {
     margin: 0;
     padding: 0;
 
-    margin-top: 25px;
-    margin-bottom: 15px;
+    margin-top:    15px;
+    margin-bottom: 20px;
 }
 
 .image_link {
@@ -85,10 +94,10 @@ body {
 #head {
     margin: 0;
     
-    margin-top: 65px;
+    margin-top: 60px;
 
-    margin-left:  35px;
-    margin-right: 150px;
+    margin-left:  auto;
+    margin-right: auto;
     
     padding: 0;
 
@@ -100,12 +109,12 @@ body {
 
 .top_nav {
     font-weight: bold;
-    font-family: courier, monospace;
+    font-family: 'cordata';
 
     margin: 0;
     
-    margin-left:  41px;
-    margin-right: 150px;
+    margin-left:  auto;
+    margin-right: 20px;
     
     width: 333px;
 
@@ -128,7 +137,7 @@ body {
 
 .friend_links {
     font-size:16px; 
-    font-family:courier,monospace;
+    font-family:'pc98';
     
     margin: 0;
     margin-top: -15px;
@@ -149,6 +158,11 @@ body {
     content: "⌨";
 }
 
+li {
+    width: 50%;
+    margin-left: 15px;
+}
+
 li::before {
     content: "-";
 }
@@ -165,7 +179,7 @@ a:hover, a:active {
 
 .one, .two, .three, .four, .five {
     padding-left:   15px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 .three {
@@ -219,6 +233,10 @@ img {
     width: 220px;
 
     float: right;
+}
+
+p, .blog_links {
+    font-family: 'cordata';
 }
 
 /* phone */
