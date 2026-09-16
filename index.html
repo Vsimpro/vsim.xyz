@@ -11,10 +11,10 @@
 </head>
     <body class="noise">
         <div class="everything">
-            <div class="card">
+
                 <div class="container">    
                     <div class="c_item">
-                        <a class="image_link" href="https://vsim.xyz/aboutme.html"> <img src="/img/proffa.png" style=" box-shadow: 7px 7px #4f6367" width="144" class="center">    </a>
+                        <a class="image_link" href="https://vs1m.pro"> <img src="/img/proffa.png" style=" box-shadow: 7px 7px #4f6367" width="144" class="center">    </a>
                     </div>
                     <div class="c_item">
                         <h1 id="head">
@@ -22,34 +22,35 @@
                             <br>
                     
                         <div class="top_nav">
-                            <a href="https://github.com/Vsimpro" target="_blank" rel="noopener noreferrer">github</a> |
-                            <a href="https://twitter.com/Vsimpro" target="_blank" rel="noopener noreferrer">twitter</a> |
-                            <a href="https://vs1m.pro/" target="_blank" rel="noopener noreferrer">blog</a> |
+                            <a href="https://github.com/Vsimpro" target="_blank" rel="noopener noreferrer">github</a> /
+                            <a href="https://twitter.com/Vsimpro" target="_blank" rel="noopener noreferrer">twitter</a> /
+                            <a href="https://vs1m.pro/" target="_blank" rel="noopener noreferrer">blog</a> /
                             <a href="https://kiosk.vsim.xyz">kiosk</a> 
                         </div>
                     </div>
                 </div>
-            </div>
        
-            <div class="card one">
-                <h3 class="blink_y"> Welcome! </h3>
-                <p  class="blog_links"> I'm <i>Ville</i>, known online as <b>Vsimpro</b> or <b>vs1m</b>. I'm a developer at heart, and a hacker by mind. 
+            <div class="card">
+                <h3 class="blink_y"> Welcome </h3>
+                <p  class="blog_links"> I'm <i>Ville</i>, known online as 
+                    <span style="color: greenyellow; text-decoration: underline;">Vsimpro</span> or 
+                    <span style="color: greenyellow; text-decoration: underline;">vs1m</span>. I'm a developer at core, and a hacker by heart. 
                 <br>
                 <br> Welcome to my home page. From the top you can find links to my stuff, like Twitter, Blog and GitHub.
                 <br>
                 <br> If you want to reach me, you can do that fastest via Discord. (<span id="copy_uname_vsi" style="user-select: all; cursor: pointer;">Vsimpro</span>/<span id="copy_uname_vs1" style="user-select: all; cursor: pointer;">vs1m</span>)
-                <br>
+
                 <br> I also have my Twitter dm's open. <a href="https://twitter.com/Vsimpro/", target="_blank">@Vsimpro</a></p>
             </div>
 
-            <div class="card two">
+            <div class="card">
                 <h4 class="card_title blink_g"> Weblog </h4>
                 <ul class="blog_links">    
                     <p> I write weblogs! Or atleast I try to write whenever I do interesting stuff. 
-                    Here's some of my tomfoolery I have been up to: </p>
-                    <p><span style="font-family: 'pc98'; font-size: medium;"><u>Research and Development</u></p>
+                    Here's some of the articles on what I have been up to: </p>
+                    <p><span style="font-family: 'pc98'; color: greenyellow; text-decoration: underline;"><u>Research and Development</u></p>
                         <li>
-                            <a href="https://vs1m.pro/posts/nostril/"> malware using Nostr-protocol </a>
+                            <a href="https://vs1m.pro/posts/nostril/"> malware using Nostr-protocol</a>
                         </li>
                         <li>
                             <a href="https://vs1m.pro/posts/every-second-counts/"> timing based sidechannel attacks! </a>
@@ -58,7 +59,7 @@
                             <a href="https://blog.vsim.xyz/article/east-west-client.html"> writing pentest tools in .js </a>
                         </li>
 
-                    <p><span style="font-family: 'pc98'; font-size: medium;"><u>Other exploration</u></p>
+                    <p><span style="font-family: 'pc98'; color: greenyellow; text-decoration: underline;"><u>Other exploration</u></p>
                         <li>
                             <a href="https://blog.vsim.xyz/article/bot-chelors-degree.html"> bot for a game no-one knows. </a>
                         </li>
@@ -70,22 +71,9 @@
                         </li>
                 </ul>
             </div>
-
-            <div class="side_by_side">
-                <div class="card three">
-                    <h2 class="blink_b"> spotify </h2>
-                    <!--<div id="song_data"><br>offline</div>-->
-                    <h3 style="font-family: 'pc98';"> - </h3>
-                </div>
-
-                <div class="card four">
-                    <h2 class="blink_r"> where-abouts </h2>
-                    <h3 style="font-family: 'pc98';"> - </h3>
-                </div>
-            </div>
         
-            <div class="card five">
-                <h3 class="blink_p"> friends!</h3>
+            <div class="card">
+                <h3 class="blink_p"> Friends</h3>
                 <ul class="friend_links">    
                     <p> These guys are tech <strong><i>wizards!</i></strong><br>
                     <li class="friends">
@@ -114,17 +102,229 @@
                         <a href="https://taquine.zip/" target="_blank">taquine</a>
                     </li>
                 </ul>
-                <img class="wizard" src="/img/wizard.png">
+            </div>
+            <div class="card" id="input">
+                <span class="terminal_cursor"></span>
             </div>
         </div>
     </body>
 </html>
+<style>
+.terminal_cursor {
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    background-color: #ffffff;
+    animation: cursor_blink 2s steps(1) infinite;
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+@keyframes cursor_blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.card {
+    border-bottom-color: transparent;
+}
+
+.card.passed {
+    border-bottom-color: #444444;
+}
+
+#input {
+    visibility: hidden;
+}
+
+h3, h4, li, #input {
+    visibility: hidden;
+}
+
+.dash_word {
+    visibility: hidden;
+    background-color: transparent;
+    transition: background-color 300ms ease-out;
+}
+
+.dash_word.current {
+    background-color: #ffffff;
+    transition: none;
+}
+
+</style>
 <script>
 
+function random_char() {
+    let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*"
+    return chars[ Math.floor(Math.random() * chars.length) ]
+}
+
+
+function scramble_text( element ) {
+    if (element.dataset.scrambling) {
+        return
+    }
+
+    element.dataset.scrambling = "true"
+
+    let i        = 0
+    let text     = element.textContent
+    let interval = setInterval(() => {
+
+        element.textContent = [...text].map((char, index) => {
+
+            if (index < i || char === " ") {
+                return char
+            }
+
+            return random_char()
+
+        }).join( "" )
+
+        i++
+
+        if (i > text.length) {
+            clearInterval( interval )
+
+            element.textContent = text
+            delete element.dataset.scrambling
+        }
+
+    }, 40)
+}
+
+
+function get_words( element ) {
+    let words = []
+    let nodes = [...element.childNodes]
+
+    for (var i = 0; i < nodes.length; i++) {
+        let node = nodes[ i ]
+
+        if (node.nodeType === Node.TEXT_NODE) {
+            let fragment = document.createDocumentFragment()
+            let parts = node.textContent.match( /\S+\s*|\s+/g ) || []
+
+            for (var j = 0; j < parts.length; j++) {
+                let part = parts[ j ]
+
+                if (/^\s+$/.test( part )) {
+                    fragment.append( part )
+                    continue
+                }
+
+                let span = document.createElement( "span" )
+                    span.className = "dash_word"
+                    span.textContent = part
+
+                fragment.appendChild( span )
+                words.push( span )
+            }
+
+            node.replaceWith( fragment )
+        }
+
+        else if (
+            node.nodeType === Node.ELEMENT_NODE &&
+            node.tagName !== "BR" &&
+            node.textContent.trim()
+        ) {
+            node.classList.add( "dash_word" )
+            words.push( node )
+        }
+    }
+
+    return words
+}
+
+
+function animate_text() {
+    var elements = [...document.querySelectorAll( "p, li, h3, h4" )]
+        .filter(element => !element.querySelector( "p, li, h3, h4" ))
+
+    var input = document.getElementById( "input" )
+    var delay = 0
+
+    for (var i = 0; i < elements.length; i++) {
+        let element = elements[ i ]
+        let heading = element.matches( "h3, h4" )
+
+        if (heading) {
+            setTimeout(() => {
+                element.style.visibility = "visible"
+                scramble_text( element )
+            }, delay)
+
+            delay += element.textContent.length * 40
+        }
+
+        else {
+            let words = get_words( element )
+
+            for (var j = 0; j < words.length; j++) {
+                let word = words[ j ]
+                let first_word = j === 0
+
+                setTimeout(() => {
+                    if (first_word && element.tagName === "LI") {
+                        element.style.visibility = "visible"
+                    }
+
+                    word.style.visibility = "visible"
+
+                    let text  = word.textContent
+                    let space = text.match( /\s+$/ )?.[ 0 ] || ""
+
+                    word.textContent = random_char() + space
+                    word.classList.add( "current" )
+
+                    setTimeout(() => {
+                        word.textContent = text
+                        word.classList.remove( "current" )
+                    }, 12)
+
+                }, delay)
+
+                delay += 18
+            }
+        }
+
+        let card = element.closest( ".card" )
+        let next = elements[ i + 1 ]
+
+        if (card && (!next || next.closest( ".card" ) !== card)) {
+            setTimeout(() => {
+                card.classList.add( "passed" )
+            }, delay)
+        }
+    }
+
+    setTimeout(() => {
+        input.style.visibility = "visible"
+        input.classList.add( "passed" )
+    }, delay)
+}
+
+
+document.querySelectorAll( "h3, h4" ).forEach(element => {
+    element.addEventListener( "mouseenter", () => {
+        scramble_text( element )
+    })
+})
+
+
+animate_text()
+
+
+// Legacy stuff, dont know if I will add them back later on.
 var PROTOCOL = window.location.href.includes("https") ? "https" : "http";
 
 var data_url = PROTOCOL + "://lastfm.vsim.xyz/api/v1/last_song"
 var song_data = document.getElementById( "song_data" )
+
+
 
 function refresh() {
     fetch( data_url )
