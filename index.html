@@ -106,6 +106,11 @@
             <div class="card" id="input">
                 <span class="terminal_cursor"></span>
             </div>
+            <div>
+                <p style="margin-top: 2px; font-size: 13px; color: #dbdbdb;">(spotify) <br>
+                <span id="spotify">└─ ♪ no track found! —</span>
+                </p> 
+            </div>
         </div>
     </body>
 </html>
@@ -336,47 +341,8 @@ function refresh() {
     })
     .then(data => {
         // This is horrible spaghetti.
-        let artist = data[ "artist" ]
-        let image  = data[ "image" ]
-        let title  = data[ "title" ]
-
-        if ((artist.length > 18) || (title.length > 18)) {
-            let split_a = artist.split(" ");
-            let split_t = title.split(" ");
-            
-            if ((split_t.length > 1) && (title.length < 15)) {
-                title = split_t[ 0 ] + "..."
-            } 
-
-            if ((split_a.length > 1) && (artist.length < 15)) {
-                artist = split_a[ 0 ] + "..."
-            } 
-        }
-
-        let _name = document.createElement( "p" )
-            _name.innerHTML = `<span style="color: grey">'</span>${ title }<span style="color: grey">',<br> by</span> ${ artist }`
-            _name.style.float = "left"
-            _name.style.userSelect = "text"
-            _name.style.fontSize = "18px"
-
-        let div = document.createElement( "div" )
-        
-        if ((title.length < 25) && (artist.length < 25)) {
-            let _image = document.createElement( "img" )
-            _image.src = image
-            _image.style.float = "left"
-            _image.className = "small_icon_spotify"
-            _image.style.marginTop = "8px"
-            _image.style.marginRight = "6%"   
-            _image.style.boxShadow = "3px 2px 1px #444444"        
-
-            div.appendChild( _image )
-        }
-
-        div.appendChild( _name )
-                                  
-        song_data.innerText = ""
-        song_data.appendChild( div )
+        let _track_data = `└─ ♪ ${ data["track"] } — ${ data["artist"] }`
+        document.getElementById("spotify").innerText = _track_data
         
     })
     .catch(error => {
